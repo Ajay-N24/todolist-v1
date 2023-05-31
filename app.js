@@ -17,13 +17,13 @@ const listSchema={
 const List =mongoose.model("list",listSchema);
 const item=mongoose.model("item",itemsSchema);
 const item1=new item({
-    name: "Ajay Nadar"
+    name: "Item 1"
 })
 const item2=new item({
-    name: "Roshan Nadar"
+    name: "Item 2"
 })
 const item3=new item({
-    name: "Priyadarshini Nadar"
+    name: "Item 3"
 })
 const defaultItems=[item1,item2,item3]
 // item.deleteOne({_id: "64707a5ddeb00cc5e4c37b57"})
