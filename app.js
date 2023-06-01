@@ -6,7 +6,7 @@ const date=require(__dirname+"/date.js");
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://Ajayprmk:0jsi9bTAi8wdeYyJ@cluster0.pap6tc8.mongodb.net/todoListDB");
+mongoose.connect("mongodb+srv://Ajayprmk:@cluster0.pap6tc8.mongodb.net/todoListDB");
 const itemsSchema={
     name: String
 };
