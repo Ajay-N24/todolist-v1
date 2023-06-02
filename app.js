@@ -1,12 +1,13 @@
 const express=require("express");
 const bodyParser=require("body-parser");
+let key=process.env.KEY;
 const app=express();
 let _ = require('lodash');
 const date=require(__dirname+"/date.js");
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://Ajayprmk:@cluster0.pap6tc8.mongodb.net/todoListDB");
+mongoose.connect("mongodb+srv://Ajayprmk:"+key+"@cluster0.pap6tc8.mongodb.net/todoListDB");
 const itemsSchema={
     name: String
 };
